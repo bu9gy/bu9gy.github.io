@@ -13,8 +13,6 @@ Provide a brief overview of the project objhectives, approach, and results.
 
 # 1. Introduction
 
-
-
 ### Motivation & Objective:
 In an era where information is abundant, the ability to understand, process, and communicate in natural language is a valuable asset. Large Language Models (LLMs) are designed to bridge the gap between human communication and machine understanding. The primary goal is to create a tool that can interpret and generate human-like text, providing assistance, simplification, and augmentation of our daily informational and communicational tasks. Essentially, we are trying to teach machines the art of human conversation and written communication.
 
@@ -89,12 +87,66 @@ In summary, LoRA represents a significant advancement in the fine-tuning of larg
 
 ## Deployment Environment
 
+We deployed our LLMs including original ones and fine-tuned families on there different environments ranging from embedded systems, edge devices, and cloud or server. The details are following like this:
+
+- Edge devices/embedded system: M2 Chip on Mac
+
+  - OS:
+  - Hardware:
+
+- Cloud: [Hugging Face](https://huggingface.co/)
+
+  - runtime: Google Colab NVIDIA [A100](https://www.nvidia.com/en-us/data-center/a100/)/[V100](https://www.nvidia.com/en-us/data-center/v100/) GPU runtime
+
+- GPU server:
+
+  - OS: ubuntu 20.04.6 LTS
+  - Hardware: 3 _ [NVIDIA RTX A6000 GPU](https://www.nvidia.com/en-us/design-visualization/rtx-a6000/) (48GB), 16 _ [Intel Xeon Gold 5222 CPU @ 3.80GHz](https://www.intel.com/content/www/us/en/products/sku/192445/intel-xeon-gold-5222-processor-16-5m-cache-3-80-ghz/specifications.html). (**We don't use distributed training across multiple servers**)
+
 ## Model Selection
+
+We selected different large language models in our experiment, the model details are as follows:
+| model       | #Parameters | Training Data Raw Size | Training Data #Tokens | Training Data #Instances |
+| ----------- | ----------- | ---------------------- | --------------------- | ------------------------ |
+| Llama-2 7B  |             |                        |                       |                          |
+| Llama-2 13B |             |                        |                       |                          |
+| ...         |             |                        |                       |                          |
 
 ## Task Definition
 
+In evaluating the performance of large language models such as LLaMA-2, a comprehensive set of tasks and datasets is typically employed to assess both accuracy and inference latency. These tasks are designed to gauge the model's capabilities in various aspects of natural language processing. We carefully select the following tasks to measure the performance both in accuracy and latency of LLMs.
+
+1. **Text Classification**
+   Objective: To assess the model's ability to understand and categorize text.
+   Typical Datasets: IMDb for movie reviews, SST-2 for sentiment analysis, and GLUE benchmark for general language understanding.
+2. **Question Answering**
+   Objective: To test the model's performance in providing accurate answers to specific questions.
+   Typical Datasets: SQuAD (Stanford Question Answering Dataset), TriviaQA, and Natural Questions.
+3. **Text Generation**
+   Objective: To evaluate the model's capability in generating coherent, relevant, and creative text.
+   Tasks: Story generation, dialogue creation, content summarization.
+4. **Named Entity Recognition (NER)**
+   Objective: To assess the model's proficiency in identifying named entities (such as names, places, organizations) in text.
+   Typical Datasets: CoNLL-2003 NER and others.
+5. **Natural Language Inference (NLI)**
+   Objective: To evaluate the model's ability in inferring the relationship between text fragments (e.g., contradiction, entailment).
+   Typical Datasets: SNLI (Stanford Natural Language Inference), MultiNLI.
+6. **Translation**
+   Objective: To test the model's ability in translating text from one language to another accurately.
+   Typical Datasets: WMT (Workshop on Machine Translation), IWSLT.
+7. **Inference Latency Measurement**
+   Methodology: Inference latency is typically measured by repeatedly running model inferences on the same or similar tasks and recording the time taken for each run. The average latency and throughput (requests processed per second) are calculated.
+
 # 4. Evaluation and Results
 
+| model       | #Parameters | Training Data Raw Size | Training Data #Tokens | Training Data #Instances |
+| ----------- | ----------- | ---------------------- | --------------------- | ------------------------ |
+| Llama-2 7B  |             |                        |                       |                          |
+| Llama-2 13B |             |                        |                       |                          |
+|             |             |                        |                       |                          |
+
 # 5. Discussion and Conclusions
+
+
 
 # 6. References
