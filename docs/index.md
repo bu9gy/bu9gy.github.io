@@ -10,6 +10,6 @@ Provide a brief overview of the project objhectives, approach, and results.
 # Required Submissions
 
 * [Proposal](proposal)
-* [Midterm Checkpoint Presentation Slides](midterm_slides.pdf)
+* [Midterm Checkpoint Presentation Slides](https://bu9gy.github.io/midterm_slides.pdf)
 * [Final Presentation Slides](http://)
 * [Final Report](report)
