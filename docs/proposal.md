@@ -56,10 +56,10 @@ To have a certainty measure metric, we define the following metrics:
 ### 8.2 Task Partition
 The project tasks are divided and assigned to different team members or groups, ensuring efficient and expert execution at each stage.
 
-| Team member | Task |
-| ----------- | ---- |
-| Zhuohao Li  |      |
-| Ying Li     |      |
+| Team member   | Task                                                         |
+| ------------- | ------------------------------------------------------------ |
+| Zhuohao Li Li | Deploy LLMs on Cloud; Quantified performance by tasks; PPT; GitHub repo |
+| Ying Li       | Deploy LLMs on Edge and Server; Quantified performance by tasks; PPT; Web |
 
 ## 9. Related Work
 
@@ -75,7 +75,14 @@ While large language models achieved high accuracy, their practical deployment o
 
 ### 9.b. Datasets
 
-List datasets that you have identified and plan to use. Provide references (with full citation in the References section below).
+We used 3 different catagories of defined tasks to meassure the performance of each deployment. Machine translation, text classification, and QA.
+
+In Machine translation, we use the popular **[OpenSubtitles](https://opus.nlpl.eu/OpenSubtitles2016.php)** datasets to perform the translation from English to Chinese.
+
+In text classification tasks, we use the [SST-2(Stanford sentiment treebank V2)](https://huggingface.co/datasets/sst2)  datasets to perform the sentiment analysis. Given each sentence, it could be classified into positive or negative. 
+
+In QA (mathematics solving), we use the datasets developed by Google Deepmind to test the ability of logic reasoning of a LLM. The original paper is [Analysing Mathematical
+Reasoning Abilities of Neural Models](https://openreview.net/pdf?id=H1gR5iR5FX).
 
 ### 9.c. Software
 
