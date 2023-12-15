@@ -158,11 +158,11 @@ In evaluating the performance of large language models such as LLaMA-2, a compre
 
 | Model      | deployment   | MT   | TC    | QA    |
 | ---------- | ------------ | ---- | ----- | ----- |
-| LLaMA2-7B  | Nvidia-A6000 | 60%  | 0     | ~13%  |
-| LLaMA2-13B | Nvidia-A6000 | 73%  | 40%   | ~38%  |
+| LLaMA2-7B  | Nvidia-A6000 | 60%  | 65.5% | ~13%  |
+| LLaMA2-13B | Nvidia-A6000 | 73%  | 70%   | ~38%  |
 | LLaMA2-7B  | MAC-M2       | /    | /     | /     |
-| LLaMA2-7B  | Cloud        | 60%  | 0%    | ~13%  |
-| LLaMA2-13B | Cloud        | 73%  | 40%   | ~38%  |
+| LLaMA2-7B  | Cloud        | 60%  | 65.5% | ~13%  |
+| LLaMA2-13B | Cloud        | 73%  | 70%   | ~38%  |
 | Falcon-7B  | Nvidia-A6000 | 68%  | 87.5% | ~29*% |
 | Falcon-7B  | MAC M2       | /    | /     | /     |
 | Falcon-7B  | Cloud        | 68%  | 87.5% | ~29*% |
@@ -171,14 +171,14 @@ In evaluating the performance of large language models such as LLaMA-2, a compre
 
 | Model      | deployment   | MT      | TC       | QA        |
 | ---------- | ------------ | ------- | -------- | --------- |
-| LLaMA2-7B  | Nvidia-A6000 | 420s/rq | 8s/rq    | 16.93s/rq |
-| LLaMA2-13B | Nvidia-A6000 | 510s/rq |          |           |
+| LLaMA2-7B  | Nvidia-A6000 | 420s/rq | 3.51s/rq | 16.93s/rq |
+| LLaMA2-13B | Nvidia-A6000 | 510s/rq | 3.43s/rq | 12.78s/rq |
 | LLaMA2-7B  | MAC-M2       | /       | /        | /         |
-| LLaMA2-7B  | Cloud        | 391s/rq | 0%       | 9.3s/rq   |
-| LLaMA2-13B | Cloud        | 124s/rq |          | 2.3s/rq   |
+| LLaMA2-7B  | Cloud        | 391s/rq | 9.5s/rq  | 9.3s/rq   |
+| LLaMA2-13B | Cloud        | 124s/rq | 4.98s/rq | 2.3s/rq   |
 | Falcon-7B  | Nvidia-A6000 | 412s/rq | 3.93s/rq | 8.25s/rq  |
 | Falcon-7B  | MAC M2       | /       | /        | /         |
-| Falcon-7B  | Cloud        | 375s/rq |          | 2.9s/rq   |
+| Falcon-7B  | Cloud        | 375s/rq | 5.44s/rq | 2.9s/rq   |
 
 # 5. Discussion and Conclusions
 
