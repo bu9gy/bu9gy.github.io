@@ -18,5 +18,5 @@ This project presents a comprehensive analysis of deploying various **Large Lang
 
 * [Proposal](proposal)
 * [Midterm Checkpoint Presentation Slides](https://bu9gy.github.io/midterm_slides.pdf)
-* [Final Presentation Slides](http://)
+* [Final Presentation Slides](https://bu9gy.github.io/final_slides.pdf)
 * [Final Report](report)
